@@ -1,6 +1,7 @@
 import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
+import matplotlib.pyplot as plt
 
 # Definindo as variáveis de entrada e saída
 peso = ctrl.Antecedent(np.arange(0, 11, 1), 'peso')
@@ -53,5 +54,4 @@ sujeira.view()
 agua.view(sim=sistema)
 
 # Mostrando os gráficos
-import matplotlib.pyplot as plt
 plt.show()
