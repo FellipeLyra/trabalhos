@@ -46,3 +46,12 @@ sistema.compute()
 
 #Saída do sistema de controle
 print(f"A quantidade de água recomendada é {sistema.output['agua']:.2f}%.")
+
+# Plotando os gráficos de pertinência das variáveis e a superfície de resposta
+peso.view()
+sujeira.view()
+agua.view(sim=sistema)
+
+# Mostrando os gráficos
+import matplotlib.pyplot as plt
+plt.show()
